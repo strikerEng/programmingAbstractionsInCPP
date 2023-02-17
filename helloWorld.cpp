@@ -1,11 +1,8 @@
 // Include the input/output stream library
 #include <iostream>
 
-// 
-using namespace std;
-
 int main(){
-    std::cout << "hello, world" << endl;
+    std::cout << "hello, world!" << std::endl;
     return 0;
 }
 
