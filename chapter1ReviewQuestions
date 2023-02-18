@@ -1,0 +1,156 @@
+Chapter 1 Review Questions:
+1. What is the difference between a source file and an object file?
+
+Source file - contains the text of a user-defined program
+Object file - contains machine language instructions which was translated by the compiler from the source file
+
+2. What characters are used to mark comments in a C++ program?
+// - single line comment
+/* */ - multiline comment
+
+3. In an #include line, the name of the library header file can be enclosed in either angle 
+brackets of double quotation marks. What is the difference between the two forms of punctuation?
+#include<libraryheaderfile.h> -  system library a part of standard C++
+#include "libraryheaderfile.h" - user-defined libraries or come from other libraries
+
+4. How would you define a constant called CENTIMETERS_PER_INCH with the value 2.54?
+const double CENTIMETERS_PER_INCH = 2.54;
+
+5. What is the name of the function that must be defined in every C++ program?
+main()
+
+6. What is the purpose of inserting endl into the output stream cout?
+end of line segment so the next text stream sent to the console output starts on a new line
+
+7. What four properties are established when you declare a variable?
+name, type, scope, and value
+name - reference to some space in memory
+type - the data type of a value
+scope - the life of a variable, global or local
+value - the value associated with a name, or variable
+
+8. Indicate which of the following are legal variable names in C++:
+    a.x YES
+    b. formula1 YES
+    c. average_rainfall YES
+    d. %correct NO, uses special characters
+    e. short NO, reserved
+    f. tiny YES
+    g. total output NO, has spaces
+    h. aReasonablyLongVariableName YES
+    i. 12MonthTotal NO, starts with a number
+    j. marginal-cost NO, has special characters
+    k. b4hand YES
+    l. _stk_depth YES
+
+9. What are the two attributes that define a data type?
+domain - set of values that belong to the data type
+set of operations - behaviors of the data type
+
+10. What is the difference between the types short, int, and long?
+The size of their domain.
+The size of the integer cannot decrease as you move from short to int to long. (see pg.20)
+
+11. What does ASCII stand for?
+American Standard Code for Information Interchange
+
+12. List all possible values of type bool.
+true false
+
+13. What statements would you include in a program to read a value from the user and store it in the variable x, which is declared as a double?
+#include <iostream>
+
+int main(){
+    /* variable declaration */
+    double x;
+    /* get user input */
+    std::cin >> x;
+
+    /* display user input */
+    std::cout << "x: " << x << std::endl;
+
+    return 0;
+}
+
+14. Suppose that a function contains the following declarations:
+    int i;
+    double d;
+    char c;
+    string s;
+Write a statement that displays the values of each of these variables on the screen.
+#include <iostream>
+cout << "i: " << i << "d: " << d << "c: " << c << "s: " << s << endl;
+
+15. Indicate the values and types of the following expressions:
+    a. 2 + 3 -> int 5
+    b. 19 / 5 -> int 3
+    c. 19.0 / 5 -> double 3.8
+    d. 3 * 6.0 -> int 18
+    e. 19 % 5 -> int 4
+    f. 2% 7 -> int 2
+
+16. What is the difference between the unary minus and the binary subtraction operator?
+unary minus takes one operand
+binary subtraction operand takes two operands
+
+What is a type cast and how do you indicate on in C++?
+Type cast changes the data type of a value.
+
+int x = 0;
+double(x);
+
+17. What does the term truncation mean?
+Discarding a decimal fraction
+
+18. Calculate the result of each of the following expressions:
+    a. 6+5/4- 3
+    b. 2 + 2 * (2 * 2 - 2) % 2 / 2
+    c. 10 + 9 * ((8 + 7) % 6) + 5 * 4 % 3 * 2 + 1
+    d. 1 + 2 + (3 + 4) * ((5 * 6 % 7 * 8) - 9) - 10
+19. How do you specify a shorthand assignment operation?
+int x = 0;
+x += 10; 
+
+20. What is the difference between the expressions ++x and x++?
+++x - prefix increment, the value of x is incremented then used in the surrounding expression
+x++ - suffix increment, the value of x before incrementing is used in the surrounding expression
+
+21. What does the term short-circuit evaluation mean?
+When the truth value of a booolean operator does not need to evaluate all of it subexpressions 
+
+22. Write out the general syntactic form for each of the following control statements:if, switch, while, for.
+if (condition) statement
+if (condition) statement else statement
+
+switch (e){
+    case(c1) { statement … statement break;}
+    default {statement … statement break;}
+}
+
+while (conditional expression ){ statements}
+
+23. Describe in English the general operation of the switch statement.
+Given a value, which case does this value match, then executue a set of statements for this specific case
+The break statement moves the program execution to the next statement directly after the switch statement. In C++, without the break statement, the program 
+will execute the following cases as well.
+
+24. What is a sentinel?
+A value that signals the end of receiving input
+
+25. What for loop control line would you use in each of the following situations?
+
+a. Counting from 1 to 100
+for (int i = 1; i <= 100: i++){}
+
+b. Counting by sevens starting at 0 until the number has more than two digits
+for (int i = 0; i <= 99; i = i + 7){}
+
+c. Counting backward by twos from 100 to 0
+for (int i = 100; i >= 0: i = i - 2)
+
+26. What is a function prototype?
+Defines a function and its parameters excluding only its implementation 
+
+27. In your own words, describe what happens when you call a function in C++.
+The name refers to a block of code, then the statements and expressions are executed inside of that function
+
