@@ -7,7 +7,7 @@ int main()
 {
     int sentinel = 0;
     int input;
-    int largestNum = INT_MIN;
+    int largestNum = INT_MIN; // start the largest number as the smallest int
 
     while (input != sentinel)
     {
