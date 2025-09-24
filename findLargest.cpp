@@ -11,6 +11,9 @@ int main()
 
     while (input != sentinel)
     {
+        /* show question mark to the left of the user input*/
+        std::cout << "? ";
+
         /* get user input */
         std::cin >> input;
 
